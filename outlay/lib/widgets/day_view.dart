@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:outlay/model/outlay.dart';
+import 'package:outlay/outlay_theme.dart';
 import 'package:outlay/widgets/outlay_card.dart';
 
 class DayView extends StatelessWidget {
@@ -13,8 +14,12 @@ class DayView extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(30),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text('//Today'),
+          const Text(
+            '//Today',
+            style: OutlayTheme.dateTimeHeader,
+          ),
           Expanded(
             child: ListView.builder(
               itemBuilder: (context, index) => OutlayCard(

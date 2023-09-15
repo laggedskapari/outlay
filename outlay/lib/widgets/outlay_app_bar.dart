@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:outlay/outlay_theme.dart';
 
 class OutlayAppBar extends StatelessWidget implements PreferredSizeWidget {
   const OutlayAppBar({super.key});
@@ -9,14 +10,20 @@ class OutlayAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(5),
       child: const SafeArea(
         child: SizedBox(
-          height: 60,
+          height: 100,
           child: Column(
             children: [
-              Text('Outlays'),
-              Text('//a minimalistic expense tracker.'),
+              Text(
+                'Outlays',
+                style: OutlayTheme.headerFont,
+              ),
+              Text(
+                '//a minimalistic expense tracker.',
+                style: OutlayTheme.secondaryHeader,
+              ),
             ],
           ),
         ),
