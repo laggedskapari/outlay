@@ -69,4 +69,11 @@ class OutlayTheme {
       fontWeight: FontWeight.w700,
       fontFamily: 'JetBrainsMono'
   );
+
+  static const TextStyle monthlyCard = TextStyle(
+      color: secondaryColor,
+      fontSize: 19,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'JetBrainsMono'
+  );
 }

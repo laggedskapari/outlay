@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:outlay/outlay_theme.dart';
 import 'package:outlay/providers/outlays_provider.dart';
+import 'package:outlay/widgets/month_view.dart';
 import 'package:outlay/widgets/outlay_app_bar.dart';
 import 'package:outlay/widgets/day_view.dart';
 import 'package:outlay/widgets/utility_belt.dart';
@@ -20,17 +21,17 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final outlays = ref.watch(outlayProvider);
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: OutlayTheme.backgroundColor,
-      appBar: const OutlayAppBar(),
+      appBar: OutlayAppBar(),
       body: Column(
         children: [
           Expanded(
-            child: DayView(outlays: outlays),
+            child: MonthView(),
           )
         ],
       ),
-      bottomNavigationBar: const UtilityBelt(),
+      bottomNavigationBar: UtilityBelt(),
     );
   }
 }
