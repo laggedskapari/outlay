@@ -38,7 +38,7 @@ class OutlayTheme {
 
   static const TextStyle categoryFont = TextStyle(
       color: secondaryColor,
-      fontSize: 12,
+      fontSize: 15,
       fontWeight: FontWeight.w700,
       fontFamily: 'JetBrainsMono'
   );
@@ -76,4 +76,40 @@ class OutlayTheme {
       fontWeight: FontWeight.w700,
       fontFamily: 'JetBrainsMono'
   );
+
+  static const TextStyle newOutlayCardHeaderFont = TextStyle(
+      color: secondaryColor,
+      fontSize: 12,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'JetBrainsMono'
+  );
+
+  static const TextStyle newOutlayCardFont = TextStyle(
+      color: secondaryColor,
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'JetBrainsMono'
+  );
+
+  static const TextStyle dropdownDebitFont = TextStyle(
+      color: errorColor,
+      fontSize: 22,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'JetBrainsMono'
+  );
+
+  static const TextStyle dropdownCreditFont = TextStyle(
+      color: Colors.green,
+      fontSize: 25,
+      fontWeight: FontWeight.w700,
+      fontFamily: 'JetBrainsMono'
+  );
+
+  static const TextStyle dropdownDateFont = TextStyle(
+    color: primaryColor,
+    fontSize: 20,
+    fontWeight: FontWeight.w700,
+    fontFamily: 'JetBrainsMono',
+  );
+
 }

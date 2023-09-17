@@ -16,9 +16,12 @@ class DayView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Text(
-            '//Today',
-            style: OutlayTheme.dateTimeHeader,
+          Container(
+            margin: const EdgeInsets.fromLTRB(0, 0, 0, 10),
+            child: const Text(
+              '//Today',
+              style: OutlayTheme.dateTimeHeader,
+            ),
           ),
           Expanded(
             child: ListView.builder(
